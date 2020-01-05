@@ -1,0 +1,19 @@
+Aqui serão abordados topicos para consulta.
+
+requery = autentificação de preenchimento obrigatorio.
+fieldset= tag referente a um ou mais campos éla é semelhante a div
+de ser usada par afazer separação em formularios.
+Obs: dentro de um fieldset não existe a tag (p) de paragrafo tem 
+que usar a tag(legend)
+
+
+tag(colspan) é o elemento de mesclar celula em tabelas.
+A criar uma tabela HTML
+A tag (table), que representa a tabela
+A tag (tr), que representa a linha da tabela
+A tag (td), que representa a célula da tabela
+A tag (thead), que representa o cabeçalho da tabela
+A tag( tbody), que representa o corpo da tabela
+A tag( th), que representa a célula do cabeçalho da tabela
+A tag (tfoot), que representa o rodapé da tabela
+A estilizar a tabela

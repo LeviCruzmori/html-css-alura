@@ -1,0 +1,122 @@
+
+/* corpo da pagina*/
+body{
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* css cabeçalho */
+/*classes*/
+.cabeçalho{
+    background-color: #bbbbbb;
+    padding: 20px 0 ;/* 20px para cima e para baixo e 0 para direita e esquerda*/
+}
+.navegacao{
+    position: relative;
+    width: 940px;
+    margin:0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;/* direita igual a zero */
+}
+
+nav li{
+display: inline; /* retira o inblock */
+margin: 0,0,0,15px;
+padding: 20px;
+
+}
+
+nav a {
+    text-transform: uppercase; /*tranforma o texto em maiusculo*/
+    color: #000;
+    font-weight: bold;/* fonte em negrito*/
+    font-size:22px ;/* tamanho da fonte*/
+    text-decoration: none;
+}
+nav a:hover{
+    color: darkorange;
+    text-decoration: underline;
+
+}
+
+/* fim cabeçalho */
+ 
+/* inicio banner */
+.banner {
+    width: 100%;
+    border: black;
+    margin: auto;
+}
+/* fim banner*/
+
+
+/* inicio css section class principal */
+
+.principal p{
+margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+/*  usado para os titulos */
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+
+}
+/* img utencilios */
+.utencilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* css img beneficios */
+.imagembeneficios{
+    width: 40%;
+}
+
+.missão{
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* fim css section class principal*/
+
+/* inicio section class mapa */
+/* css mapa */
+.mapa{
+     margin: 0 0 3em;
+}
+.mapa p{
+    text-align: center;
+   margin: 0 0 2em;
+}  
+
+/* fim mapa*/
+
+/* inicio section class beneficios */
+
+.beneficios{
+width: 100%;
+padding: 20px;
+background-color: #ffffff;
+}
+
+.itens{
+    font-style: italic;
+}
+
+
+
+
