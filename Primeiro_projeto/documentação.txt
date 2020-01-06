@@ -17,3 +17,55 @@ A tag( tbody), que representa o corpo da tabela
 A tag( th), que representa a célula do cabeçalho da tabela
 A tag (tfoot), que representa o rodapé da tabela
 A estilizar a tabela
+
+propriedades css (:hover/:active/;visites/:required)
+
+first-child=> seleciona o primiro item da lista.
+last-child => seleciona o ultimo item da lista.
+nth-child(x)=> seleciona por posição x do elemento citado, 2n celeciona tods elementos pares.
+
+linear-gradient=> da até para fazer um arco iris.
+
+first-letter => com ele é possivel celecionar somente a primeira letra do paragrafo.
+
+after=> que vem depois do selecionado
+before => que vem antes do selecionado
+
+seletores avançado de css
+como selecionar um unico paragrafo (
+    *este seleciona um unico paragrafo.
+    main > p{
+        background: blue;
+    }
+     * este seleciona o paragrafo após a tag img.
+     img + p{
+         background; red;
+     }
+
+     *este seleciona todos os paragrafoa após o img.
+
+     img ~ p{
+         background: yellow;
+     }
+     *este você pode usar para excluir alguma parte que não queira que adote a configuração adotado pelas outras tags.
+      .principal p:not(#missao){
+          background: orange;
+      }
+      assim somente o paragrafo do #missao que não vai adotar as configurações recorrentes.
+)
+
+* realizando calculos dinamicos com css
+(
+  width: calc(45%-(24px*40)/4)  
+*este sria um exemplo de calculo de largura com css.
+)
+
+*opacidade dos elementos css(
+    opacyt: 0.7; é igual a 70%
+    *opacyt em cores 
+    rgba(0 0 0 1,5) 
+)
+sombra interna usa a tag inset.
+* sombra em elementos.(
+    box-shadow: 10px 10px 5px #00000
+)
