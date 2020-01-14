@@ -1,0 +1,28 @@
+
+
+Aqui você encontrara anotações de codigo que ja fizerm parte do codigo 
+com explicações de cada conteudo.
+
+*********************************************************************
+Esta foi uma meneira de buscar variavel com javaScript.
+ /* outra maneira de chamar o conteudo da variavel da classe
+ criando outra vaiavel em especifico.
+/*
+  var peso = tdpeso.textContent;
+  var nome = tdnome.textContent;
+  var altura = tdaltura.textContent;
+  var gordura = tdgordura.textContent;
+  var imc = tdimc.textContent;
+
+*/
+representação no console
+/*
+console.log(paciente);
+console.log(tdnome);
+console.log(tdpeso);
+console.log(tdaltura);
+console.log(tdgordura);
+console.log(tdimc);
+*/
+
+*********************************************************************
