@@ -6,7 +6,13 @@
     /* coletando dados do paciente do form do index.html */
     var form = document.querySelector('#form-adiciona')
     var paciente = obitempacientefoformulario(form);
-    console.log(paciente)
+   
+    var erros= validapaciente(paciente);
+
+    if(erros.length > 0 ){
+     exibemensagensdeerro(erros);
+      return;
+    }
  
     /* criar a tr a td do paciente */
   var pacientetr = montartr(paciente);
@@ -18,10 +24,24 @@
 
     form.reset();
 
+    var mensagemErro = document.querySelector('#mensagem-erro');
+    mensagemErro.innerHTML;
+
 
 
   });
-/* função que obtem os valores o que alimenta o fromulario */
+function exibemensagensdeerro(erros){
+  var ul = document.querySelector('#mensagem-erro');
+  ul.innerHTML = '';
+
+  erros.forEach(function(erro){
+    var li = document.createElement('li');
+    li.textContent = erro;
+    ul.appendChild(li)
+  });
+  }
+
+  /* função que obtem os valores o que alimenta o fromulario */
   function obitempacientefoformulario(form){
 
     var paciente = {
@@ -60,3 +80,30 @@
     return td;
 
   }
+
+  function validapaciente(paciente){
+var erros = [];
+    if (paciente.nome.length == 0) {
+      erros.push('O nome não é valido')
+    }
+   if(!validapeso(paciente.peso)){
+      erros.push('PESO INVALIDO');
+    }
+
+    if(!validaaltura(paciente.altura)){
+       erros.push('ALTURA INVALIDA');
+    }
+   
+
+    if(paciente.gordura.length == 0){
+      erros.push('gordura não pode ser em branco')
+    }
+    if(paciente.peso.length == 0){
+      erros.push('peso não pode ser em branco')
+    }
+    if(paciente.altura.length == 0){
+      erros.push('altura não pode ser em branco')
+    }
+    return erros;
+  };
+  
