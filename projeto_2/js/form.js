@@ -13,23 +13,23 @@
      exibemensagensdeerro(erros);
       return;
     }
- 
-    /* criar a tr a td do paciente */
-  var pacientetr = montartr(paciente);
-
-/* trasendo o tr para dentro da tabela que sera exibida com os dodos coletados pelo formulario.*/
-    var tabela = document.querySelector('#tabela-pacientes');
-
-    tabela.appendChild(pacientetr);
+    acidionapacientenatabela(paciente);
 
     form.reset();
 
     var mensagemErro = document.querySelector('#mensagem-erro');
     mensagemErro.innerHTML;
 
-
-
   });
+
+// função referente ao arquivo bucar-paciente.js para poder adicionar os dados direto na tabela.
+
+function acidionapacientenatabela(paciente){
+  var pacientetr = montartr(paciente); // monta tr
+  var tabela = document.querySelector('#tabela-pacientes');// pucha tabela
+  tabela.appendChild(pacientetr);// coloca pacinete tr na tabela.
+}
+
 function exibemensagensdeerro(erros){
   var ul = document.querySelector('#mensagem-erro');
   ul.innerHTML = '';
