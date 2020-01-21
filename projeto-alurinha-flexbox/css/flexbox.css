@@ -1,0 +1,38 @@
+/* alinhando ao centro*/
+.cabecalhoPrincipal .container {
+    display: flex; /* ppermite deixar alinhado um do lado do outro*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+
+}
+
+/* footer rodapé  */
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+
+}
+/* botão de enviar */
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+/* mapa de cursos */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-flow: column wrap;/* esta faz a operação da outras duas de baixo.*/
+  /*  flex-direction: column;/* cria coluna vertical */
+  /* flex-wrap: wrap; /* quebra a colunas em varias partes em tamanhos iguais */
+    height: 250px;/* tramanho da coluna */
+}
