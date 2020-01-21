@@ -36,3 +36,90 @@
   /* flex-wrap: wrap; /* quebra a colunas em varias partes em tamanhos iguais */
     height: 250px;/* tramanho da coluna */
 }
+/* conteudo li parte dos cursos.*/
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* tamanho dos li */
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    
+}
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-left: 0;
+}
+
+/* parte mobile */
+/* o codigo abaixo é referente a confg da parte mobile. */
+@media (max-width: 768px){
+
+    .cabecalhoPrincipal-nav {
+        flex-direction:column;
+    }
+
+    .cabecalhoPrincipal .container{
+        flex-direction:column;
+        align-items: initial;
+        text-align: center;
+    }
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+    .conteudoPrincipal-cursos-link {
+        width:100%;
+    }
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+    .rodapePrincipal-patrocinadores-list {
+        margin: 0;
+        width: 100%;
+
+    }
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content:center
+    }
+    .cabecalhoPrincipal-nav-link-app {/* muda a ordem do item nossoApp*/
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+    margin: 0 auto;
+}
+}
+/* midia de video*/
+.videoSobre .container {
+    display: flex;
+
+}
+
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
