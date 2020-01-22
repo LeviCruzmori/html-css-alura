@@ -36,3 +36,19 @@
     grid-row-end: 2;
     */
 }
+/* codigos jaatimizados */
+.destaques__secundario:nth-child(3){
+    background-image:url("../img/slack.png")center / no-repeat / cover;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.destaques__secundario:nth-child(4){
+    background-image:url("../img/whatsapp.png")center / no-repeat / cover;
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.destaques__secundario:nth-child(5){
+    background-image:url("../img/pubg.jpg")center / no-repeat / cover;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
