@@ -1,0 +1,15 @@
+.destaques {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;/* define colunas*/
+    grid-template-rows: 33.33% 33.33% 33.33% 33.33%;/*define linhas*/
+    height: calc(100vh - 50px);/* tamanho do grid do destaque menos 50px do cabeçalho*/
+
+}
+/* elemento de destaque*/
+.destaques__principal{
+    background-image:url("../img/fortnite.jpg") ;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
