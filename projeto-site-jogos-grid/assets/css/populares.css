@@ -16,8 +16,7 @@
         "card-imagem"
         "card-corpo";
     grid-template-columns: 100%;
-  
-   
+    
 }
 .populares__card:last-child {
     margin-right: 0;
@@ -35,7 +34,7 @@
     grid-template-areas: 
         "card-cabecalho"
         "card-conteudo";
-    grid-template-rows: 50px auto;
+   grid-template-rows: 50px auto;
     padding: .75rem;
 }
 .populares__card___titulo{
