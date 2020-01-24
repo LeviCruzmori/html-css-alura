@@ -1,10 +1,35 @@
 /*configurando posicionamento da imagem*/
+.card-largura{
+    width: 18rem;
+}
 .imagem-carrossel{
     object-fit: cover;
     object-position: 0 80%;
     height: 400px;
+
 }
-.titulo{
+.titulo, .fonte-titulo{
     font-family: 'Pacifico', cursive;
   
+}
+.cor-especial{
+    color: darkred!important;
+
+}
+.cards-conteudo{
+    direction: flex;
+    justify-content: space-between
+    
+}
+.botao-cor-especial{
+    background-color: darkred;
+    color: white;
+}
+.card{
+    border-color: darkred;
+}
+.cards-tamanho-imagem{
+    object-fit: cover;
+    /*object-position: 0 80%;*/
+    height: 200px;
 }
