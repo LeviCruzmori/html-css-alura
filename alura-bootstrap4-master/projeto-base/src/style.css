@@ -1,0 +1,10 @@
+/*configurando posicionamento da imagem*/
+.imagem-carrossel{
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 400px;
+}
+.titulo{
+    font-family: 'Pacifico', cursive;
+  
+}
